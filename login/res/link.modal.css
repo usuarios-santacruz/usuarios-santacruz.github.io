@@ -1,0 +1,410 @@
+body #cargando.jqmWindow{text-align:center;}
+
+body .jqmWindow.linkModal{
+	padding:0!important;
+	font-size:.9em;
+	width:600px;
+	margin-left:-275px;
+	z-index:5001;
+}
+body .jqmWindow.linkModal#saludo{
+    width:450px;
+    height:52px;
+    font-size:1em;
+    font-weight:bold;
+    color:#666666;
+    background:transparent;
+    border:0px solid #DDDDDD;
+    margin-left:-225px !important;
+}
+body .linkModal#saludo div.middle{
+    background:transparent url("../../images/fondo.modal.saludo.jpg") repeat-x bottom left!important;
+    height:50px!important;
+    padding:0px!important;
+    width:448px;
+    border-top:2px solid #AAAAAA;
+    border-bottom: 2px solid #666666;
+    border-left: 2px solid #AAAAAA;
+    border-right: 2px solid #666666;
+
+}
+
+body .linkModal#saludo div.middle p{
+        font-weight:bold;
+        margin:0px !important;
+        text-align:center;
+        padding-top:13px;
+        color:#666666;
+}
+
+body .jqmWindow#cambioClaveModal .middle{
+        font-size: 12px;
+        
+}
+
+#cambioClaveDatos table td{
+    padding-right:3px;
+    border-bottom: 1px solid #CCCCCC;
+    height:30px;
+}
+
+#cambioClaveDatos table {
+    width:100%;
+}
+
+body .linkModal .top{
+	width:100%;
+	height:22px;
+	float:left;	
+	display:inline;
+}
+
+body .linkModal .top a{
+	float:right;
+	display:inline;
+	margin-right:10px;
+	padding-left:20px;
+	margin-top:5px;
+}
+
+body .linkModal .enlacesBottom{
+    width:100%;
+    height:22px;
+    float:left; 
+    display:inline;
+    text-align:center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #EEEEEE;
+    border-top: 1px solid #666666;
+}
+
+body .linkModal .enlacesBottom a{
+    display:inline;
+    margin-right:10px;
+    padding:3px 0px 3px 22px;
+    margin-top:5px;
+    color:#666666;
+    text-decoration:none;
+}
+
+body .linkModal .enlacesBottom a:hover{
+    color:#000000;
+}
+
+body .linkModal .enlacesBottom a#print{
+    background: transparent url("../../images/login/bt_imprimir.gif") top left no-repeat;
+}
+body .linkModal .enlacesBottom a#download{
+    background: transparent url("../../images/login/bt_descargar.gif") top left no-repeat;
+}
+
+/* Correccion del ancho de la ventana modal de la aplicacion para Firefox*/
+body .linkModal div.middle{
+	float:left;
+	display:inline;
+	padding:15px!important;
+	width: 93%;
+	min-height:50px;
+	max-height:350px;
+	height:100%;
+	overflow:auto;
+	*width: 98%;
+	_width: 98%;
+	background-color:#FFFFFF;
+}
+
+body .linkModal div.middle #transferenciasArealizar{
+    max-height:300px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width: 100%;
+}
+
+/** html body .linkModal div.middle { 
+   height: expression( this.scrollHeight > 299 ? "300px" : "auto" ); 
+}*/
+
+/* Correccion del ancho de la ventana modal de la aplicacion para Internet Explorer 7*/
+
+*:first-child+html body .linkModal div.middle{
+	width: 98%; /*LINKI-4691*/ /*LINKI-8019*/
+	/*padding:0px !important;*/  /*-- HB-2170 --*/
+}
+
+/* Correccion del ancho de la ventana modal de la aplicacion para Internet Explorer 6*/
+* html body .linkModal div.middle{
+	width: 98%; /*LINKI-4691*/ /*LINKI-8019*/
+}
+
+*:first-child+html body #cambioClaveModal.linkModal div.middle{
+        width: 93%; /*LINKI-8019*/
+}
+
+* html body #cambioClaveModal.linkModal div.middle{
+        width: 93% ; /*LINKI-8019*/
+}
+
+
+body .linkModal div.middle div.separador{
+	width:98%;
+	float:left;
+	display:inline;
+	padding:1%;
+}
+
+body .linkModal div.middle div.separador h5{
+	margin:3px;
+}
+
+body .linkModal div.middle div.realizada{
+	padding:5px 2px;
+	border-bottom:1px solid #EA9B11;
+	min-height:65px;
+	height:auto!important;
+	*height:65px;
+	width:99%!important; /* LINKI-4837 */
+	float:left;
+	display:inline;
+	clear:both;
+}
+
+* html body .linkModal div.middle div.realizada{
+    width:99%!important; /* LINKI-4837 */
+}
+
+body .linkModal div.middle div.realizada label{
+	float:left;
+	display:inline;
+	height:100%;
+	margin:10px;
+}
+
+body .linkModal div.middle div.realizada div.datos{
+	float:left;
+	display:inline;
+	height:100%;
+	margin-left:10px;
+	width:60%;
+	margin-top:10px;
+}
+
+body .linkModal div.middle div.realizada div.datos h5{
+	margin-top:10px;
+	width:375px; /* LINKI-4837 */
+
+}
+
+body #modalRecargas div.middle div.realizada div.datos h5{
+    width:60%;
+}
+
+a.verComprobante{
+    z-index:10000 !important;
+}
+
+body .linkModal div.middle div.realizada div.saldo{
+	float:right;
+	display:inline;
+	height:100%;
+}
+
+body .linkModal div.middle p.quitar{
+	float:left;
+	display:inline;
+	margin:28px 0 0 15px;
+	padding:0 0 0 20px;
+	cursor:pointer;
+	cursor:hand;
+	background-repeat:no-repeat;
+	background-position:center left;
+}
+
+body .linkModal div.bottom{
+	width:100%;
+	float:left;
+	display:inline;
+	clear:both;
+	position:relative;
+
+}
+
+#modalTransferencias.linkModal div.bottom{
+    _position:absolute;
+}
+
+*:first-child+html #modalTransferencias.linkModal div.bottom{
+	position:relative;
+}
+
+body .linkModal div.bottom p{
+	width:100%;
+}
+
+body .linkModal div.bottom div.clave{
+	padding:5px 0;
+}
+
+body .linkModal div.bottom div.clave *{
+	float:left;
+	display:inline;
+}
+
+body .linkModal div.bottom div.clave label{
+	margin:0 5px 0 65px;
+}
+
+body .linkModal div.bottom div.clave a{
+	width:62px;
+	height:17px;
+	/*display:block!important;*/
+	display:block;
+	float:left;
+	display:inline;
+	margin:0 0 10px 10px;
+	padding:5px 0 0 0;
+}
+
+body .linkModal div.terminos{
+	margin:10px 0 0 25px;
+}
+
+body .linkModal div.terminos textarea{
+	margin:5px 0;
+	padding:2px;
+}
+
+body .linkModal div.terminos *{margin-left:5px;}
+body .linkModal div.cajaMail *{margin-left:5px;}
+
+body .linkModal div.cajaMail div.ingresoMail{
+	width:240px;
+	float:left;
+	display:inline;
+	margin-left:10px;
+}
+
+body .linkModal div.cajaMail div.modificarMails{
+	width:50%;
+	float:right;
+	display:inline;
+	padding-right:5px;
+	margin-top:5px;
+}
+
+body .linkModal div.cajaMail div.modificarMails p{
+	width:140px;
+	float:left;
+	display:inline;
+}
+
+body .linkModal div.cajaMail div.modificarMails label,
+body .linkModal div.cajaMail div.modificarMails input{
+	float:left;
+	display:inline;
+}
+
+body .linkModal div.cajaMail div.modificarMails #cambiarEnDatosPersonales{
+	/*margin-left:-10px;
+	margin-top:5px;*/
+}
+
+body #enlacesModal{
+	width:800px;
+	left:45%!important;
+}
+
+body #enlacesModalLogin.jqmWindow.linkModal, #tycModal {
+	width:800px;
+	height:auto;
+	max-height:450px;
+	top:10%;
+	*height:350px;
+	_height:350px;
+}
+
+div.textoClave{
+	display:none;
+	position:absolute;
+	background: #dddddd;
+	padding: 5px;
+	font-size: .8em;
+	border: 2px solid #333333;
+	text-align:left;
+	width:300px;
+	z-index:3000;
+}
+
+#osk{z-index:3050;cursor:move;}
+
+div.textoClave *{text-align:left;}
+
+div.login div.campos a.preg{outline:none;}
+
+body #fullscreenPdf.jqmWindow.linkModal{
+	width:940px!important;
+	margin-left:-470px!important;
+}
+
+body #fullscreenPdf.linkmodal div.middle{
+	padding-bottom:15px;
+	max-height:900px!important;
+	width:100%!important;
+}
+
+* html body #fullscreenPdf.jqmWindow.linkModal div.middle{
+ height: expression( this.scrollHeight > 899 ? "900px" : "auto" ); 
+}
+
+body #fullscreenPdf.jqmWindow.linkmodal div.middle .paginaExtracto{overflow:auto;}
+
+body #fullscreenPdf.jqmWindow.linkmodal div.middle .pdfContent{
+	width:90%;
+	margin:10px 0 15px;
+	margin-left:5%;
+	height:450px;
+	overflow:auto;
+}
+
+/*TERMINOS Y CONDICIONES DEL LOGIN*/
+body #tycModal.jqmWindow.linkModal {
+margin-left:-380px !important;
+margin-top:-50px;
+_margin-top:-25px!important;
+width:760px !important;
+}
+
+body #tycModal.linkModal div.middle {
+max-height:250px !important;
+_height:250px;
+width:730px !important;
+}
+/*Cursor en forma de mano paara las tablas de las transacciones. LINKI-5888 */
+#cuerpo div#transaccion table.scroll tbody tr {cursor:pointer!important;}
+
+#modalConfiguracionPersonal div.middle .extracto h5 {cursor:pointer!important;}
+
+
+/*para pf cambiar cuente acreditacion*/
+#divTicket{ border:1px solid #000000;}
+#divTicket *, #resultadoTxNoParseado *{ font-family:monospace,courier!important;}
+body .linkModal #resultadoTxNoParseado table.ticket tr *{padding:0px!important;}
+
+/* LINKI-5290 FIX IE6 */
+body div#transaccion table.scroll tr#firstrow{*display:none!important;overflow:hidden!important;}
+
+/* LINKI - 6322 */
+#pinConClave{
+	height:75px!important;
+}
+
+#modalConfirmAgenda #modalAceptar, #modalConfirmAgenda #modalCancelar{
+    text-transform: capitalize;
+}
+
+body .linkModal .divModifOTP{
+	float:left;
+	padding:15px;
+	width: 93%;
+	text-align: justify;
+}

@@ -1,0 +1,848 @@
+html, body {
+	height:0% !important;
+}
+#contenedorPpal{
+	box-shadow:none!important;
+}
+
+#cabeza,
+#cuerpo #izquierdo,
+#cuerpo #derecho,
+#pie,
+#pieControles,
+.contextual,
+div.contEstado,
+.controlesGrilla,
+.agregarAcceso,
+.nomostrar,
+.adherirCuenta,
+.jqmOverlay,
+.ultimoExtracto h4,
+div.scroll *,
+#screenLayout, #cargando * form {display:none!important; height:0px !important;}
+
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal{
+    display:none!important;
+}
+
+*:first-child+html #fullscreenPdf {
+    display:none!important;
+}
+
+
+
+form#listado {display:block !important;}
+
+/**:first-child+html #fullscreenPdf div.middle #paginaExtracto img.imagenExtracto{
+    display:none!important;
+}
+
+*:first-child+html #fullscreenPdf div.middle{
+    display:none!important;
+}*/
+
+#cuerpo{
+	float: none !important;
+  	width: auto !important;
+ 	margin: 0 !important;
+	padding: 0 !important;
+}
+
+
+*{float:none!important;}
+
+*:first-child+html .scroll tr td{
+	height:50px;
+}
+* html {}
+
+div.titulo{border:none!important;}
+
+
+/* LINKI - 6310 */
+#totales p{
+	float:right;
+}
+/*
+#totales{width:100%!important;}
+#totales p{
+	width:30%;
+	margin:5px 20px 5px 5px;
+}
+*/
+
+div#transaccion div.resultado div.datosCuenta{width:100%!important;}
+
+div#transaccion div.resultado div.datosCuenta p.tipo, div#transaccion div.resultado div.datosCuenta p.moneda{width:30%; padding:0px!important;float:left;display:inline;}
+
+/*Para tarjetas*/
+#resumenTarjetasCredito #tarjetasCreditoGrid.scroll, #consumosGrid.scroll{height:100%!important;}
+#resumenTarjetasCredito #tarjetasCreditoGrid.scroll tbody td, #consumosGrid.scroll tbody td{height:5px!important;padding:2px!important;}
+#cuerpo #transaccion .scroll table.scroll thead tr th div, #resumenTarjetasCredito .scroll table.scroll thead tr th{height:15px!important;padding:0px!important;}
+#cuerpo #transaccion .scroll table.scroll thead tr th div span{display:none!important;}
+#cuerpo #transaccion .scroll table.scroll thead tr th div{margin-top:-10px!important;}
+#cuerpo #transaccion table.scroll .tablediv,  #cuerpo #transaccion table.scroll tr.subgrid{height:43px;padding:0px!important;margin-top:0px!important;}
+
+/*LINKI-5930*/
+#cuerpo #transaccion table.scroll .tablediv,  #cuerpo #transaccion #cuentasAdheridasPropias.scroll tr.subgrid{*height:73px;}
+
+/*para movimientos historicos - LINKI-6331*/
+#cuerpo #transaccion table#movimientos.scroll .tablediv{*height:63px!important;}
+
+/*Para vep*/
+#resultadoVeps, #resultadoVeps>div{width:100%!important;}
+div#detalleVep, #detalleVep>div{width:100%!important;} /* Impresion VEPs */
+div#detalleVep{margin-left:0px!important;}
+#resultadoVeps div .scroll, #detalleVep div .scroll{width:100%!important;}
+* html #resultadoVeps div .scroll, * html #detalleVep div .scroll{width:700px!important;}
+#resultadoVeps div .scroll tr, #detalleVep div .scroll tr{font-size:.7em!important;} /* Font-size requerido para imprimir en una sola hoja*/
+
+/* LINKI - 6484 */
+* html #resultadoVeps div .scroll tr *,
+* html #detalleVep div .scroll tr *{font-size:.9em!important;width:100px!important;}
+* html #resultadoVeps div .scroll tr img,
+* html #detalleVep div .scroll tr img{display:none;}
+/* FIN LINKI - 6484 */
+
+#resultadoVeps div .scroll tr th, #detalleVep div .scroll tr th{width:15px!important;}
+#resultadoVeps div .scroll tr td, #detalleVep div .scroll tr td{width:15px!important;}
+
+*:first-child+html div#resultadoVeps{height:100%!important;}
+* html div#resultadoVeps, * html div#detalleVep{height:800px!important;}
+* html div#detalleVep, * html #resultadoVeps{width:700px!important;}
+
+body div#detalleVep.linkModal div.middle{
+	width:500px;
+}
+/*Para resumen transferencias*/
+
+#cuerpo div#transaccion table.scroll tbody td{
+    padding-bottom:10px !important;
+}
+
+#cuerpo div#transaccion #contenedorTransferencias div.detalle{
+	float:left!important;
+	height:auto;
+	width:90%!important;
+	padding:0 5px!important;
+}
+#cuerpo div#transaccion div.visualizarResumen div.parametros{height:90px!important;padding:0px!important;}
+#cuerpo div#transaccion #contenedorTransferencias div.detalle div{width:40%!important;display:inline!important;float:left!important;}
+
+#listadoExtractos,
+.extracto,
+.extracto .detalle,
+.extracto .contenido{
+	width:730px!important;
+	/*height:100%!important;*/
+ 	margin: 0px 0 0 0 !important;
+ 	*margin: 0px 0 0 0 !important;
+	padding: 0 !important;
+	border:none!important;
+	*overflow:hidden!important;
+}
+
+
+
+/*LINKI-6465*/
+.extracto #detalleContenido.detalle,
+.extracto #detalleContenido.contenido{margin-top:0px!important;height:auto!important;_height:1%!important;*height:1%!important;}
+.extracto #detalleContenido {
+    _height:auto!important;
+    _overflow:hidden!important;
+    *height:auto!important;
+    *overflow:hidden!important;
+}
+
+/*.detalle .contenido img.imagenExtracto{width:100%!important;margin-top:10px;top:10px!important;}*/
+
+#detalle {
+	text-align: left;
+	line-height: normal;
+	padding: 10px 10px 10px 20px !important;
+}
+
+#detalle *{
+	border:none!important;
+	background-color:none!important;
+	display:none;
+}
+
+#detalle .infoDetalle,
+#detalle #logoEntidad,
+#detalle #logoEntidad img{
+	display:block!important;
+}
+
+#detalle p{
+	float: left;
+	text-align: left;
+	clear: both;
+	display: block !important;
+	width: 50% !important;
+	margin-top: 0px !important;
+	display:block!important;
+}
+
+#detalle p span{
+	display:inline!important;
+}
+
+#detalle p.nomostrar{display:none!important;}
+
+#detalle .infoDetalle{
+	width: 100%!important;
+	height: 100%!important;
+}
+
+.extracto .contenido{
+	margin-left:-30px!important;
+}
+
+div#listaComprobantes{
+	margin-top:-200px!important;
+}
+
+#resultadoConsulta div#listaComprobantes{
+	margin-top:0px!important;
+}
+
+/*#resultadoConsulta div#listaComprobantes.extracto h5{
+    font-size:14pt;
+    color:red !important;
+}*/
+#resultadoConsulta div#listaComprobantes.extracto .contenido{
+	margin-left:0px!important;
+	border-top:1px solid #666666;
+}
+
+body .extracto.abierto{
+    background-color:transparent!important;
+    *color:#666666!important;
+    _color:#666666!important;
+}
+
+div#listaComprobantes .extracto .contenido{
+	margin-left:0px!important;
+	*overflow:hidden!important;/* LINKI - 6465 */
+	_overflow:hidden!important;
+}
+#cuerpo #transaccion .extracto .contenido{
+	margin-top:0px!important;
+    *overflow:hidden!important;
+    _overflow:hidden!important;
+}
+#resultadoConsulta div.parametros {
+	margin-top:0px!important;
+	height:100px!important;
+	padding:3px!important;
+	display:none;
+	} 
+#cuerpo #transaccion #listaComprobantes .extracto .contenido div.realizada{padding:0px!important;display:block!important;margin-top:0px!important;/*LINKI - 6847*/}
+#cuerpo #transaccion .extracto .contenido div.realizada{width:100%!important;padding:0px!important;display:block!important; height:75px!important;/*LINKI - 6847*/}
+
+#cuerpo div#resultadoConsulta div.parametros {
+_background:none;
+_border:medium none !important;
+_margin-top:0px !important;
+_padding:3px !important;
+display:none;
+/* HB-1460 */
+}
+
+/*LINKI - 6847*/
+#cuerpo #transaccion #listaComprobantes .extracto .contenido div.realizada div.datos h5.entePagado{*margin-top:0px!important;padding-top:0px!important;}
+#cuerpo #transaccion #listaComprobantes .extracto .contenido div.realizada label {margin-top:20px!important;*margin-top:15px!important;}
+
+#cuerpo #transaccion #resultadoConsulta div#listaComprobantes{margin-top:-50px!important; /* este alto genera doble pagina en ie7 --- height:100%!important;*/}
+
+#cuerpo #transaccion #resultadoConsulta div#listaComprobantes.compras{margin-top:-60px!important;height:auto!important;/*LINKI-6465*/}
+
+#cuerpo #transaccion .extracto .contenido div.realizada div.datos {float:left!important;width:470px!important; margin-left:25px;}
+#cuerpo #transaccion .extracto .contenido div.realizada div.datos h3{margin-left:5px!important;margin-top:5px;/* LINKI - 6465 */}
+
+#cuerpo #transaccion .extracto .contenido div.realizada label {float:left!important;height:10px!important;width:5px!important;display:inline!important;margin-left:10px;margin-top:20px;}
+#cuerpo #transaccion .extracto .contenido div.realizada div.saldo{padding:0px!important;float:left!important;width:100px!important;margin-right:30px!important;margin-top:10px;}
+
+/* html #cuerpo #transaccion div#resultadoConsulta div.parametros{height:10px!important;margin:0px!important;display:none!important;}*/
+
+/*:first-child+html #cuerpo #transaccion .extracto .contenido div.realizada div.datos{margin-top:30px!important;}*/
+
+* html #resultadoConsulta div#listaComprobantes{margin-top:-10px!important; /* este alto genera doble pagina en ie7 --- height:100%!important;*/}
+
+*:first-child+html #resultadoConsulta div#listaComprobantes{margin-top:-50px!important;/* este alto genera doble pagina en ie7 --- height:100%!important;*/}
+/* html #cuerpo #transaccion div#resultadoConsulta div#listaComprobantes{margin-top:10px!important;height:800px!important;}*/
+* html #cuerpo #transaccion .extracto .contenido div.realizada {padding:5px!important;margin-bottom:5px!important;margin-top:0px!important;}
+* html #cuerpo #transaccion .extracto .contenido div.realizada label {margin-top:0px!important;}
+*:first-child+html #cuerpo #transaccion .extracto .contenido div.realizada label{margin-top:5px!important;}
+* html #cuerpo #transaccion .extracto .contenido div.realizada div.datos {width:550px!important;}
+* html #cuerpo #transaccion .extracto .contenido div.realizada div.datos h5.entePagado{height:5px!important;}
+* html #cuerpo #transaccion .extracto .contenido div.realizada span{margin-top:0px!important;padding:0px!important;}
+* html #cuerpo #transaccion .extracto .contenido div.realizada div.saldo{width:100px!important;padding:0px!important;float:right!important;margin-right:0px!important;}
+#cuerpo #transaccion .navbody, #cuerpo #transaccion #tablas {
+background-color:#FFFFFF!important;
+border:2px solid #FFFFFF!important;
+}
+
+#cuerpo #transaccion .anchoFijo{width:700px!important;}
+#cuerpo #transaccion .bordeActivado{border:none!important;width:700px!important;}
+#cuerpo #transaccion .bordeActivado .scroll{width:700px!important;}
+.jqmWindow {
+	border:none!important;
+}
+#cuerpo #transaccion #contenedorTransferencias.bordeActivado {
+    *overflow:visible !important;
+}
+
+#cuerpo #transaccion #contenedorTransferencias.bordeActivado div{
+	overflow:visible !important;
+}
+
+
+#cuerpo #transaccion #contenedorTransferencias.bordeActivado {
+    *overflow:visible !important;
+}
+#cuerpo #transaccion #contenedorTransferencias.bordeActivado div{overflow:visible !important;}
+
+body .linkModal{margin-left:200px !important;}
+body .linkModal#comprobante, body .linkModal#confirmar {margin-left:100px;}
+body .linkModal#comprobante{float:left!important;clear:both!important;}
+
+body .linkModal#detalle, body .linkModal#modalTransferencias, body .linkModal#detalleMensaje,
+body .linkModal#detalleVep, body .linkModal#modalComprobantePago, body .linkModal#modalPrestamos, 
+body .linkModal#modalComprobante, body .linkModal#modalRecargas, body .linkModal#ticketPagos{ margin-left:100px!important;}
+
+body .linkModal#operacionSegura, body .linkModal#comprobanteSinParsear{margin-left:100px!important}
+* html body .linkModal#detalleMensaje, * html body .linkModal#comprobante{margin-left:50px!important;}
+body .linkModal#detalleMensaje div.middle{display:block!important;height:400px;width:600px!important;}
+body div.middle #originanteMsj{float:left;display:inline!important;}
+body div.middle #fechahoraMsj{float:right!important;display:inline!important;margin-top:-20px;}
+
+/*Para VEP*/
+body .linkModal#detalleVep, body .linkModal#ticketPagos{width:70%!important;}
+body .linkModal#detalleVep table.ticket .imgLogo img, body .linkModal#ticketPagos table.ticket .imgLogo img{margin-left:30px!important;}
+body .linkModal#detalleVep table.ticket .ticketTitulo b, body .linkModal#ticketPagos table.ticket .ticketTitulo b{margin-left:50px!important;}
+
+/*EXTRACTOS*/
+#cuerpo #transaccion #listadoExtractos .extracto .contenido{display:block!important;width:100%!important;}/*FIX IMPRESION EXTRACTO*/
+#cuerpo #transaccion #listadoExtractos .extracto .contenido .imagenExtracto{width:100%!important;margin-left:0px!important;}
+*:first-child+html #cuerpo #transaccion #listadoExtractos .extracto .contenido{margin-top:-30px!important;height:800px!important;}/*FIX IMPRESION EN IE6 ie7 EXTRACTOS*/
+* html #cuerpo #transaccion #listadoExtractos .extracto .contenido{margin-top:-20px!important;height:auto!important;overflow:hidden!important;}
+* html #cuerpo #transaccion #listadoExtractos .extracto .contenido .imagenExtracto{margin-top:50px!important;margin-left:30px!important;width:90%!important;}
+
+/*CORRECCION PARA QUE NO NO SE VEN LOS SCROLL  *LINKI-5976* */
+
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal{margin:60px!important 0px 200px 0px!important;position:static!important;zoom:1;float:none!important;}
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal .top a{display:none!important;}
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal .middle{position:static!important;margin:0 0 0 0px!important;overflow:hidden;zoom:1;}
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal .middle .paginaExtracto{margin:0 100px 0 0px!important;}
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal img{display:none!important;}
+/*:first-child+html body #fullscreenPdf.jqmWindow.linkModal .middle .paginaExtracto img.imagenExtracto{width:90%;margin:0 0 0 0px!important;overflow:visible;position:static!important;float:none!important;display:block!important;}*/
+
+/**:first-child+html body #fullscreenPdf.jqmWindow.linkModal{height:1000px!important;width:100%!important;margin:-60px 0 -100px 0!important;border:3px solid #00AA33!important;position:static!important;display:block!important;float:none!important;clear:none!important;overflow:hidden;}
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal .middle{height:1000px!important;width:100%!important;border:3px solid blue!important;margin:0 0 0 0px!important;position:static!important;display:block!important;float:none!important;clear:none!important;}
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal .middle .paginaExtracto{height:1000px!important;width:100%!important;border:3px solid red!important;margin:0 0 0 -50px!important;position:static!important;display:block!important;float:none!important;clear:none!important;}
+*:first-child+html body #fullscreenPdf.jqmWindow.linkModal .middle .paginaExtracto .imagenExtracto{border:3px solid yellow!important;margin:0 0 0 0px!important;position:static!important;display:block!important;float:none!important;clear:none!important;}*/
+
+
+
+
+/*IMpresion resumen de tarjetas LINKI-5406*/
+#datosTarjeta{width:700px!important; border:1px solid #000000!important;clear:both!important;float:left!important;/*display:block!important;*/}
+#datosTarjeta #datosTarjeta-derecha {
+	display:inline!important;float:right!important; width:340px!important;
+}
+
+#datosTarjeta #datosTarjeta-izquierda {
+	display:inline!important;float:left!important; width:340px!important;
+}
+
+#detalleConsumosVisa *{font-family:"Courier New",monospace!important;border:1px solid #000000!important;}
+#divTicket *, #resultadoTxNoParseado *, #plazosFijosNoParsea *{ font-family:"Courier New",monospace!important;}
+#plazosFijosNoParsea *{padding:0px!important;}
+#detalleConsumosVisa pre {font-size:0.9em!important}
+
+/*Impresion de ultimo resumen */
+#detalleConsumosVisa pre *{border:none!important; padding:0px!important;margin:0px!important}
+
+*:first-child+html #detalleConsumosVisa pre{font-size:1.1em!important}
+
+#modalComprobante .contTicket table *, #comprobanteSinParsear table *, #comprobante.precanc table *{
+font-family:"Courier New",monospace!important;
+padding:0px!important;
+margin:0px!important;
+}
+
+#modalComprobante .contTicket table .comprobanteTicket td *{text-align:center!important;}
+
+/*Impresion de ultimo resumen */
+#detalleConsumosVisa pre *{border:none!important; padding:0px!important;margin:0px!important}
+
+*:first-child+html #detalleConsumosVisa pre{font-size:1.1em!important}
+
+/*LINKI-5813*/
+body #operacionSegura.pedidoBoletas, body .linkModal#modalTransferencias{width:100%!important;margin-left:0px!important}
+body #operacionSegura.pedidoBoletas table{margin-left:0px!important;}
+body .linkModal#modalTransferencias{margin:0px!important;}
+body .linkModal#modalTransferencias .middle{margin:0px!important; padding:0px!important;}
+body #operacionSegura.pedidoBoletas #ticketPedido{
+	padding-left:0px!important;	
+}
+
+
+/* Impresion VEPs */
+
+#cuerpo div#transaccion .resultadoVeps table.scroll td{
+*width:58px!important;
+*word-wrap: break-word;}
+
+#cuerpo div#transaccion .resultadoVeps table.scroll th{
+*width:58px!important;
+*word-wrap: break-word;}
+
+/* Formateo para la impresion de los enlaces del header */
+div.terminos{
+    width: 700px !important;
+}
+div.preguntas{
+    width: 700px !important;
+    margin:20px;
+}
+div.seguridad{
+    width: 700px !important;
+}
+div.informacion{
+    width: 700px !important;
+}
+
+/*Impresion de comprobantes de Orden de Extraccion*/
+body #modalOrdenesDeExtraccion.linkModal, 
+body #comprobante.linkModal{
+    margin-left: 0px;
+}
+
+body #comprobante.linkModal .top h4,
+body #modalOrdenesDeExtraccion .top h4{
+    background:none repeat scroll 0 0 transparent;
+    display:block;
+    margin:0;
+    text-align:left;
+
+}
+
+#cuerpo #transaccion #consultaOrdenExtraccionTransaccion #listaComprobantes .extracto .contenido div.realizada{
+    padding:0 !important;
+    clear:both;
+}
+
+#cuerpo #transaccion #consultaOrdenExtraccionTransaccion #listaComprobantes .extracto .contenido div.realizada .datos{
+    width: 430px!important;
+}
+
+#cuerpo #transaccion #consultaOrdenExtraccionTransaccion #resultadoConsulta div#listaComprobantes{
+    margin-top: -100px !important;
+}
+
+#cuerpo #transaccion #consultaOrdenExtraccionTransaccion #resultadoConsulta div#listaComprobantes *{
+    font-size: 0.95em;;
+}
+
+#cuerpo #transaccion #consultaOrdenExtraccionTransaccion .parametros{
+    height: auto !important;
+}
+
+#cuerpo #transaccion #consultaOrdenExtraccionTransaccion .parametros p{
+    margin: 0;
+}
+
+#cuerpo #transaccion #consultaOrdenExtraccionTransaccion  .extracto .contenido div.realizada div.datos h3{
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+div#transaccion div.titulo h3 {
+	   padding-bottom: 50px;
+	}
+
+
+#comprobanteTarjetaAdicional{
+    margin:0px !important;
+}
+
+#comprobanteSolicitud{
+    margin:0px !important;
+}
+
+
+#listaComprobantes .extracto h5{
+    display:none;
+}
+/** se debe visualizar el monto del extracto h5 en las impresiones HB-1225 **/
+#listaComprobantes .extracto .realizada .saldo h5{display:block;}
+
+#detalleSolicitadas{
+    margin-top:55px !important;
+}
+.listadoSolicitadas {
+    padding: 10px 5px !important;
+}
+td#tituloPago{
+	text-align:left!important;
+}
+
+
+
+
+
+
+#comprobanteSolicitud div#contentMiddle .ticket td.titulo {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px !important;
+    font-weight: bold;
+    padding-top: 4px;
+    font-family:Aria!important;	
+}
+#comprobanteSolicitud div#contentMiddle .ticket td {
+    font-size: 11px !important;
+}
+body .linkModal table.ticket tr * {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px !important;
+    padding: 5px !important;
+}
+body .linkModal table.ticket tr * {
+    padding: 5px;
+}
+body .linkModal table.ticket * {
+    padding: 2px 5px;
+}
+body .ticket tr td {
+    color: #006CB7;
+    margin-top: 10px;
+}
+
+/*-- HB-1110 --*/
+#comprobanteSolicitud div#contentMiddle .ticket td.titulo {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px !important;
+    font-weight: bold;
+    padding-top: 4px;
+    font-family:Arial!important;	
+}
+#comprobanteSolicitud div#contentMiddle .ticket td {
+    font-size: 11px !important;
+    font-family:Arial!important;
+}
+
+#comprobanteTarjetaAdicional div#contentMiddle .ticket td.titulo {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px !important;
+    font-weight: bold;
+    padding-top: 4px;
+    font-family:Arial!important;
+}
+#comprobanteTarjetaAdicional div#contentMiddle .ticket td {
+    font-size: 12px !important;
+}
+/*-- fin HB-1110 --*/
+/***HB-3579***/
+#comprobanteSinParsear.jqmID10.nomostrar.linkModal.jqmWindow{
+	display:block!important;
+}
+/***Fin HB-3579***/
+/***HB-3926***/
+#comprobanteSinParsear.jqmWindow.linkModal.nomostrar.jqmID11 {
+    display: block !important;
+}
+/***Fin HB-3926***/
+
+/****** HB-2241 ******/
+.ocultarPropiasBanco {
+	display: none !important;
+}
+/**** Fin HB-2241 ****/
+
+/****** HB-2198 ******/
+#cargando {
+	display: none !important;	
+}
+/**** Fin HB-2198 ****/
+
+.bajaBotones{
+	display:none;
+}
+
+/* HB-4918 */
+
+#contenedorCuentasAdheridas > div > table > thead > tr > th input{
+	display:none !important;
+}
+
+#cuentasAdheridasGrid tr td input{
+	display:none !important;
+}
+
+#jqgh_tipo > img{
+	display:none !important;
+}
+/* HB-4918*/
+
+
+/* HB-4983 */
+#transaccionConsultaComprasComercios{
+	top: 0px;
+	left: 0px;
+	width: auto !important;
+	min-height: 300px;
+	position: relative;
+	margin: 20px;
+	padding: 20px;
+}
+
+#transaccionConsultaComprasComercios > .titulo > h3{
+	position: absolute !important;
+	left: 0px !important;
+	top: 0px !important;
+	text-align: left;
+}
+
+.consultasComprasComercios div#cuerpo div#transaccion.columna div#transaccionConsultaComprasComercios div#resultadoConsulta{
+	float: left!important;
+}
+
+.consultasComprasComercios div#transaccion.columna div#transaccionConsultaComprasComercios div#resultadoConsulta div#listaComprobantes.compras{
+	margin: 30px 0px !important;
+	padding: 0px!important;
+}
+.consultasComprasComercios #listaComprobantes > div.extracto.abierto{
+	 border: 1px solid #ccc !important;
+}
+   
+/* HB-4983 */
+#listaComprobantes .extracto h5 {
+	display: block;
+	color: #333;
+	
+}
+
+
+/* HB-5003 */
+
+.precancelacionPlazoFijo #contenedorPpal #cuerpo {
+	border:0px !important;
+	overflow:hidden !important;
+}
+
+
+.precancelacionPlazoFijo #resultados{
+	display: none;
+}
+
+.precancelacionPlazoFijo #comprobanteSinParsear{
+	display: block !important;
+	left: 0px;
+	height:auto !important;
+}
+
+.precancelacionPlazoFijo #comprobanteSinParsear .ticket{
+	border: none !important;
+	margin: 10px;
+	height:auto !important;
+}
+
+.precancelacionPlazoFijo .titulo h3{
+	float: left !important;
+	margin-top: -10px !important;
+	margin-left:130px !important;
+	height:auto !important;
+
+}
+ 
+.precancelacionPlazoFijo #comprobanteSinParsear .middle div{
+	padding:15px !important;
+	width: 500px !important;
+}
+
+/* Fin HB-5003 */
+
+/* HB-4908 */
+
+#seleccionarCuentaGrid .jqgrow.selected > td, #seleccionarCuentaGrid .jqgrow > td{
+ 	color:#333 !important;
+ }
+ 
+ /* HB-4908 */
+
+.posicionConsolidada #cuerpo{
+	overflow:hidden;
+}
+/*Hb-5003*/
+#comprobanteSinParsear {
+	overflow:hidden;
+}
+
+#contenedorPpal #cuerpo{
+	border:none !important;
+}
+
+.prestamosPersonales div#cuerpo #transaccion{
+	overflow:hidden;
+	border:none !important;
+}
+
+#contenedorPpal #cuerpo{
+	overflow:hidden !important;
+}
+/**** HB-5562 ****/
+html body .botonera{
+	display:none;
+}
+body .linkModal.jqmWindow#enlacesModalLogin{
+	max-height:none!important;
+	height:auto!important;
+}
+html body #enlacesModalLogin.jqmWindow.linkModal {
+	left: 0;
+}
+html body .enlacesLogin {
+	display: none;
+}
+/**** Fin HB-5562 ****/
+
+#modalComprobantePago.linkModal #ticketPagos.middle{
+	background-color:transparent;
+}
+
+.modificacionLimiteExtraccion #contenedorComprobante #tablaComprobante .leyenda td {
+    border-top: 0 none;
+}
+.modificacionLimiteExtraccion #contenedorTransaccion,
+.constitucionPlazoFijo .contConstituir #operacionSegura {
+    margin: 0 auto!important;
+}
+.constitucionPlazoFijo .contConstituir #operacionSegura .middle .ticket{
+	padding:10px;
+}
+.constitucionPlazoFijo .contConstituir #ticketImprimir.middle{
+	padding:0px!important;
+}
+.ultimosMovimientos #divGrillaMovimientos #divMovimientos
+{
+	width: 85% !important;
+}
+/*****HB-5535*****/
+.pagar #transaccionRealizarPagos #tablas > #divcuentas,
+.pagar #transaccionRealizarPagos #tablas > #srvImp {
+    display: none !important;
+}
+/***Fin HB-5535***/
+
+/***impresiones info debin***/
+
+.debinVendedor #informacionDebin,
+.debinComprador #informacionDebinPreauto, 
+.debinComprador #informacionDebin, 
+.debinVendedor #confirmarDebin, 
+.debinComprador #confirmarDebin,
+.debinComprador #confirmarDebinPreauto{
+	display: block;
+    left: 40px;
+    position: absolute;
+    border:1px solid #ccc!important;
+    margin-top: 50px;
+}
+.xCerrar{
+	display:none;
+}
+#informacionDebinPreauto .boton.ok,
+#informacionDebin .boton.ok,
+#confirmarDebin .boton.ok,
+#confirmarDebinPreauto .boton.ok{
+	display:none;
+}
+.debinComprador #informacionDebinPreauto .middle.debinModal,
+.debinVendedor #informacionDebin .middle.debinModal, 
+.debinComprador #informacionDebin .middle.debinModal{
+	max-height: none!important;
+}
+.debinVendedor #jqmOverlay, 
+.debinComprador #jqmOverlay{
+	opacity: 1 !important;
+}
+#contSolapasDebin label {
+    display: none !important;
+}
+#grillaDebinesHistorico .botoneraAgenda.botoneraGrilla,
+#grillaDebinesPreAutoComprador .botoneraAgenda.botoneraGrilla{
+	display:none;
+}
+#grillaDebinesHistorico .grillaAgendaPager.scroll,
+#grillaDebinesPreAutoComprador .grillaAgendaPager.scroll{
+	display:none!important;
+}
+.contenidosDebin {
+    border: 0 none !important;
+}
+#contentDebin, #contSolapasDebin {
+    min-height: 100vh;
+}
+/***fin impresiones info debin***/
+/*Issue Debines Históricos*/
+#contentDebin .contenidosDebin{
+	position:initial!important;
+}
+#contentDebin .titSeccion{
+	display:none;
+}
+#contentDebin #grillaDebinesHistorico .grillaAgendaTitulo,
+#contentDebin #grillaDebinesPreautoComprador .grillaAgendaTitulo{
+	display:none;
+}
+#CambioClaveForm {
+	display:none;
+}
+
+/*impresion comprobante credin*/
+.credinGenerar #confirmarDebin.linkModal {
+    margin: 0 auto!important;
+}
+.credinGenerar #confirmarDebin {
+    left: 0;
+    right: 0;
+}
+.credinGenerar .comprobante .leyenda_comprobante_creacion{
+	height:auto;
+}
+.credinGenerar #confirmarDebin.linkModal{
+	position:initial;
+}
+.mostrarDetalleCredin #contenedorTransaccion{
+	margin: 0 auto;
+}
+.mostrarDetalleCredin #contenedorComprobante #tablaComprobante td{
+	height: auto;
+    padding: 8px 0 0px;
+}
+/*fin impresion comprobante credin*/
+
+
+
+/***HB-8868****/
+@media print {
+	body .linkModal#comprobante #contentMiddle{
+		margin-top:95px;
+	}
+
+    body .linkModal#modalComprobantePago .contTicket{
+	margin-top:106px
+    }
+}
+/****HB-8868***/
+
+/* Ini - Debitos Automaticos */
+.debitosAutoProximos div#cuerpo div#transaccion.columna div.titulo h3,
+.debitosAutoRealizados div#cuerpo div#transaccion.columna div.titulo h3{
+		padding-bottom: 10px !important;
+}
+/* Fin - Debitos Automaticos */

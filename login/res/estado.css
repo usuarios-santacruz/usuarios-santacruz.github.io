@@ -1,0 +1,36 @@
+body div.estado {
+	width:430px;
+	min-height:30px;
+	height:auto!important;
+	position:fixed;
+	top:50px;
+	left:50%;
+	margin-left:-225px;
+	z-index:11100;
+	padding:10px;
+}
+
+* html body div.estado {
+	position:absolute;
+	top: 50px;
+	left: 50%;
+}
+
+body div.estado h4{
+	opacity:1.0;
+	z-index:600;
+	float:left;
+	width:325px;
+}
+
+body div.estado span{
+	float:right;
+	display:block;
+	padding:0 20px 0 0;
+}
+
+div#ayudaUsuario a.cerrarAyuda, div#ayudaAvatar a.cerrarAyudaAvatar{
+	color:#222;
+	float:right;
+		
+}

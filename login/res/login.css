@@ -1,0 +1,1201 @@
+@charset "UTF-8";       /* Establece la codificación de la hoja de estilos a Unicode UTF-8 */
+@charset 'iso-8859-15'; /* Establece la codificación de la hoja de estilos a Latin-9 (idiomas de Europa Occidental, con símbolo de euro) */
+
+@font-face {
+	font-family:'Roboto';
+	src:url('Roboto-Regular.ttf') format("truetype");
+	src:url('Roboto-Regular.eot');
+}
+
+/*Cambios SF - Hernan*/
+div.pin {
+	 margin-top:8px;
+}
+
+div.campoUsr {
+	display:block;
+	margin-top:8px;
+}
+
+div.campoUsr label{
+	margin-left:50px;
+}
+
+div.titulo{
+	background-color: #128939;
+	text-align:center;
+	color:#FFFFFF;
+	/*
+	margin-top:15px; */    /*** HB-1534 ***/
+	/*//margin-top:15px;*/  /*** HB-1534 ***/
+}
+.desa{
+	text-align:center;
+	font-weight:bold;
+	color: #CC0000;
+}
+div.login div.campos div.ingresar label{
+	margin:0;
+	text-align:left;
+	padding-top:10px;
+}
+div.login div.campos div.ingresar{
+	margin: 0px 0px;
+	text-align:left;
+	width: 232px;
+	float:left;
+}
+
+div.login div.campos div. label{
+	margin-left:60px;
+	margin-top:-18px
+}
+
+div.login div.campos div. input{
+	margin-top:-27px
+}
+
+div #contAvatar.avatar {
+	height: 40px;
+    margin-right: 30px;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 40px;
+}
+
+
+div.login div.campos div.coordenadas input{
+	width:25px;
+	border: 1px solid #006633;
+	margin-top: 5px;
+	margin-right: 3px;
+}
+
+div.login div.campos div.coordenadas td{
+	width:25px;
+	text-align:right;
+	padding-left:5px;
+}
+
+/*--------------------------------*/
+
+
+html,body{
+	height:100%;
+	width:100%; /*-- HB-3593 --*//***nuevo diseño***/
+	margin:auto; /*-- HB-3593 --*/
+	padding:0;
+	font-family: "Roboto",sans-serif;
+}
+
+form{margin:0;padding:0;}
+
+div#contenedor{
+	width:760px;
+	float:left;
+	display:inline;
+	background-repeat:no-repeat;
+}
+
+* html div#contenedor{
+	float:none;
+	overflow: hidden;
+}
+
+div.botonera{
+	width:760px;/**** HB-1953 ****/
+	*width:760px;/**** HB-1953 ****/
+	height:26px;
+	/*float:left;*/	/***nuevo diseño***/
+	display:inline;
+	border-bottom-width:5px;
+	padding-right:0px;
+}
+
+div.botonera ul{
+	list-style-type:none;
+	font-size:12px;			/***nuevo diseño***/
+	/*height:100%;*/
+	margin:0;
+	padding:0x 0 0 0;
+	*padding:4px 0 0 0;
+	text-align: center;		/***nuevo diseño***/
+	/*line-height: 30px;	*/	/***nuevo diseño***/
+}
+
+div.botonera ul li{
+	display: inline;
+}
+
+div.botonera ul li a{
+	display:inline;
+	margin: 0;
+    padding: 0 20px;
+	/*border-left:1px solid #0094D2;*/ /*-- HB-1801 --*/
+	/*border-right:1px solid #fff; *//*-- HB-1801 --*/
+}
+
+div.login{
+	background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    font-size: 12px;
+    height: 350px;
+    /*margin: 150px auto;*/
+    position: relative;
+    text-align: center;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 3px 3px 2px 2px;
+    margin: 135px auto;    /*Nueva imagen background y texto principal*/
+}
+
+
+div.login div.bienvenido{
+	display:block;
+	background-color: #128939;	/***nuevo diseño***/
+	border-radius:4px 4px 0 0;	/***nuevo diseño***/
+	/*float: right;		*/		/***nuevo diseño***/
+    /*margin: 50px;		*/		/***nuevo diseño***/
+}
+.bienvenido img {
+    margin: 30px auto 0;		/***nuevo diseño***/
+    display: none;				/***nuevo diseño***/
+}
+
+div.login div.ingreso{
+	height: 70px;
+	position: relative;
+}
+
+div.login div.siEsPcPublica{
+	height: 20px;
+    margin: 0 0 0 55px;
+    padding: 0;
+    position: absolute;
+    top: -25px;
+    width: 55%;
+}
+
+div.login div.siEsPcPublica p{
+	font-size:37px;
+	float:left;
+	display:inline;
+	/*margin:-7px 5px 0 10px;
+	*margin:0 5px 0 10px;*/
+}
+
+div.login div.siEsPcPublica label{
+	float:left;
+	display:inline;
+	font-size:10px;
+	margin:6px 0 0 10px;
+	*margin:5px 0 0 5px;
+}
+/*Se modifica margin para SF - Hernan*/
+div.login div.siEsPcPublica input{
+	float:left;
+	display:inline;
+    margin:5px 0 0 7px;
+}
+/*fix checkbox IE6 */
+* html div.login div.siEsPcPublica input { margin:2px 0 0 6px; }
+
+/*Se modifica padding, posisici�n, y ancho para SF - Hernan*/
+div.login div.campos{
+	/*margin-top:20;*/
+	padding:0px 0px 0px;
+	width:100%;				/***nuevo diseño***/
+	/*float:left;*/				/***nuevo diseño***/
+	background:none;
+	top: 145px;					/***nuevo diseño***/
+	/*right: 80px;				/***nuevo diseño***/
+	/*position:absolute;*/
+}
+
+
+/*Se modifica text-align, margin y padding para SF - Hernan*/
+div.login div.campos label{
+	float: left;
+    font-size: 1em;
+    padding: 0;
+    text-align: right;
+}
+
+
+/*Se modifica float, border y margin para SF - Hernan*/
+div.login div.campos input{
+	background-color: #fff;
+    border: 0px solid #b0b0b0;
+    margin-left: 10px;
+    padding: 6px 0;
+    width: 220px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+/***nuevo diseño***/
+div.login div.campos input:focus{
+	background-color: #ffffff;
+}
+/***fin nuevo diseño***/
+
+#contAvatar > img {
+    width: 46px;
+    border-radius: 60px;
+    margin-top: -10px;
+    margin-right: -15px;
+}
+
+/*Modificacione3s varias para SF  Hernan*/
+div.login div.campos div#campoUsuario {
+	margin: 0;
+    text-align: left;
+    width: 250px;
+	position: relative;
+	margin-top: 60px;
+}
+div.login div.campos div.campo {
+	/*width:175px;*/			/***nuevo diseño***/
+	/*margin-top: 10px;*/		/***nuevo diseño***/
+	/*float:right;*/			/***nuevo diseño***/
+}
+/*div.login div.campos div#campoUsuario div.campo, div.login div.campos div#campoPassword div.campo, div.login div.campos div#otp div.ingresar {
+	background: transparent url('imagenes/login/bg_input.gif') no-repeat top left;
+	background-position:inherit;
+	width:120px;
+	height:20px;
+	margin-top:0px;
+	padding-top: 0px;
+	float:right;
+}*/
+div.login div.campos div#campoUsuario div.campo, div.login div.campos div#campoPassword div.campo, div.login div.campos div#ingresar div.campo{
+	display: block;
+	height: 50px;
+}
+
+div#campoPassword{
+	width:250px;		/***nuevo diseño***/
+	position: relative;
+	margin-top: 60px;
+}
+
+*:first-child+html div.login div.ingreso div.campos input{
+	background-attachment: inherit;
+}
+
+/*Se modifica width para SF - Hernan*/
+div.login div.campos input#pin{width:120px;}
+
+div.login div.campos a.preg {
+	font-family: "Roboto",sans-serif;
+	font-size: 22px;
+	text-decoration: none;
+	/*float:left;*/
+}
+
+/*div.login div.campos img#btn_ingresar{
+	margin:10px 0 0 0;
+	cursor:pointer;
+}
+*/
+div.login img#btn_ingresar{
+	margin:10px 0 0 0;
+	cursor:pointer;
+}
+
+
+div.login img.certify{
+	position:absolute;
+	bottom:10;
+}
+
+div.login img.certify.left{
+	left:10;
+	bottom:25;
+}
+
+div.login img.certify.right{
+	right:10;
+}
+
+/** ------- CUSTOMIZABLE ------- **/
+
+html,body{
+	background-color:#006CB7;
+	background-image:none;
+
+}
+
+/*se modifica la imagen de fondo para SF - Hernan*/
+div#contenedor{
+	border-color:#006CB7;
+	border-bottom-color:#006CB7;
+	background-image:url('bg_login1.jpg');
+	background-position: center top -30px;
+	width: 100%;
+	background-color: #fff;
+	height: 100vh;
+	background-size: cover;
+    box-shadow: 0px -120px 100px inset rgba(255,255,255,1);
+}
+
+
+div.botonera{
+	background: rgba(45, 97, 195, 0.7);
+    text-align: left;
+    width: 100%;
+    height: 40px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: absolute;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 650px) {
+	div.botonera{
+		height:auto;
+	}
+}
+
+.enlacesLogin {
+    margin: 13px 0 ; /* 99482*/
+}
+
+div.botonera a{
+	font-family: "Roboto",sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+div.botonera a:hover{
+
+	text-decoration:none; /*-- HB-1801 --*/
+}
+
+div.login{
+	/*float: left;*/				/***nuevo diseño***/
+	border-right:2px solid none;
+	background-color:none;
+}
+
+div.login div.bienvenido{
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+	height: 100px;
+	background-color: #006CB7;
+	border-radius: 2px 2px 0 0;
+	background-size: 230px;
+}
+
+div.login div.siEsPcPublica{
+
+}
+/*
+div.login div.siEsPcPublica label {
+	float: none;
+	font-size: 11px;
+	margin: 0;
+	position: absolute;
+	top: 6px; left: 17px;
+}
+
+div.login div.siEsPcPublica input {
+	float: none;
+	margin: 0;
+	position: absolute;
+	top: 6px; right: 25px;
+}*/
+
+
+
+div.login div.siEsPcPublica img{
+	float:left;
+	margin: 0 0 0 10px;
+}
+
+/*Modificado para SF - Hernan*/
+a.btn_ingresar{
+	background-color: #006CB7;
+    border-radius: 25px;
+    bottom: 50px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin: 0px auto;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 204px;
+}
+/***nuevo diseño***/
+.btn_ingresar a:hover{
+	background-color: #019cd6;
+}
+/***fin nuevo diseño***/
+
+div.login div.campos label{
+	color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 6px;
+    text-decoration: none;
+}
+
+div.login div.campos a.preg {
+	color: #006CB7;
+}
+
+
+
+/* CONTENIDO_TECLADO NUEVO */
+
+#botonera{
+	position:absolute;
+	top:173px;
+	left:479px;
+	z-index: 8;
+	display:block;
+	background:#22A14C url('bgTeclado.jpg') repeat-x top left;
+	border:2px solid #FFF;
+	padding:2px;
+}
+
+tr.btn td, td#b0{
+	background:url('bgBoton.gif') no-repeat;
+	width:31px;
+	height:17px;
+	text-align:center;
+	cursor:pointer;
+	cursor:hand;
+	font-family: "Roboto",sans-serif;
+	font-weight:bold;
+	font-size:12px;
+}
+
+td#borrar{
+	background:url('bgBotonBottom.gif') no-repeat;
+	padding:0px;
+}
+
+td#borrar a{
+
+	font-weight:bold;
+	font-size:11px;
+	text-decoration:none;
+	color:#000;
+	padding:2px 11px;
+}
+
+
+div.cuerpo{
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	float: left;
+	clear: left;
+	background:#fff;
+	width: 760px;
+	color: #333;
+	font-family: "Roboto",sans-serif;
+	text-align: left;
+	bottom:0px;
+	position:fixed;
+}
+
+div.cuerpo h3{
+	font-size: 18px;
+	font-weight: bold;
+	padding:10px 10px 0 10px;
+}
+
+div.cuerpo h4{
+	font-size: 12px;
+	font-weight: bolder;
+	margin-top:5px;
+	padding: 0 10px;
+}
+
+div.cuerpo p{
+    display: inline-block;
+    font-size: 11px;
+    margin: 5px 20px 5px 165px;
+    max-width: 565px;
+    padding: 15px;
+    text-align: justify;
+    width: 62%;
+}
+
+@media (max-width: 550px) {
+	div.cuerpo p{
+		width:75%;
+	}
+}
+
+div#contenedor div.cuerpo{
+	text-align: center;
+	/*border-top-width:2px;*/			/***nuevo diseño***/
+	/*border-top-style:solid;*/			/***nuevo diseño***/
+	width:100%;							/***nuevo diseño***/
+	background-color:#ffffff;			/***nuevo diseño***/
+	border-top: 1px solid #cccccc;		/***nuevo diseño***/
+}
+
+
+div.cuerpo p span{
+font-weight:bold;
+background:#006CB7;				/***nuevo diseño***/
+color:#ffffff;					/***nuevo diseño***/
+padding:0 5px;
+}
+
+div.cuerpo img {
+	display: inline-block;		/***nuevo diseño***/
+	/*float: right;*/			/***nuevo diseño***/
+	margin: 5px;
+}
+
+div.cuerpo div.chicos {
+	/*float: right;*/		/***nuevo diseño***/
+	display: inline-block;	/***nuevo diseño***/
+	margin:5px 10px 5px 0;
+}
+
+div.cuerpo div.chicos a.linkCertisur{
+	/*FIX LINKI-5285*/
+	float:left;
+	display:inline;
+	margin:18px 5px 0;
+	*margin:0px 5px 0;
+}
+
+/* html div.cuerpo div.chicos a.linkCertisur{margin:18px 5px 0;}*/
+
+div.cuerpo div.chicos a.linkCertisur img{margin:0px;}
+
+div.cuerpo div.chicos object{float: right;}
+
+div.cuerpo img.link {
+	margin: 3px;
+	max-height: 40px;
+}
+
+/*Modificado para SF - Hernan*/
+div.login div.campos a.preg {
+	position: absolute;
+    right: 25px;
+    top: -30px;
+}
+
+a.preg{
+	margin-top:10px;
+	margin-left:15px;
+}
+
+#campoUsuario .preg {
+    margin-top: 30px !important;
+}
+
+/*IE6*/
+
+*:first-child+html {} * html a.preg{
+	margin-top:3px;
+	margin-left:0px;
+}
+
+/*Modificado para SF-Hernan*/
+div.login div.campos a.preg.ayuda2 {
+	*top:3px;
+	*margin-top:2;
+	*left:232px;
+}
+div.login div.campos a.preg{
+	*top:3px;
+	margin-top:0!important;
+	*left:232px;
+	*clear:both;
+}
+
+div.pie{
+	display:none;
+}
+/*Se modifica margen izquierdo y se elimina clase .avatar para SF - Hernan*/
+div.login div.campos {
+	margin: 40px auto 50px;
+    text-align: center;
+    width: 240px;
+}
+
+
+/*--
+ Estado
+--------------------------------------*/
+
+div.estado {
+    height: 30px; width:430px;
+    position: absolute;
+    top:90px;  left: 150px;
+    z-index:500;
+    padding:10px;
+    opacity:0.9;
+    font-family: "Roboto",sans-serif;
+	-moz-border-radius: 4px; -khtml-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+
+* html div.estado{
+	position:absolute;
+	top:50px;
+}
+
+div.estado h4{
+    margin:0;
+    padding:0;
+    opacity:1.0;
+    z-index:600;
+    float:left;
+    width:365px;
+    height:auto;/*HB-7730*/
+    font-size:0.8em;
+    color: #333;
+	width: 200px;
+
+}
+
+div.estado span{
+	background: url(bt.cerrar.modal.gif) no-repeat bottom right;
+    color: #000;
+	cursor:pointer;
+	display:block;
+	float:right;
+    font-size:0.8em;
+	font-weight: bold;
+    padding:0 18px 0 0;
+	height:18px;
+}
+
+div.estado{
+    background:#B3DB89;
+    border:1px solid #7BAD73;
+}
+
+div.estado.error{
+    background:#F7D6CB;
+    border:1px solid #CE4509;
+    min-height:45px !important;
+    height: auto !important; /* HB-5009 */
+}
+
+div.estado.bien{
+    background:#B3DB89;
+    border:1px solid #7BAD73;
+}
+
+/*--
+	TECLADO VIRTUAL
+-------------------------------------*/
+
+
+#osk{
+background:#22A14C url(bgTeclado.jpg) left top;
+border:2px solid #FFFFFF;
+display:block;
+left:479px;
+padding:2px;
+position:absolute;
+top:173px;
+z-index:8;
+padding-top:20px;
+}
+
+
+#osk div {
+	padding: 1px 2px;
+}
+
+#osk input, #osk button {
+	border:none;
+	border-color: #4D4D4D;
+	background-color:#FFFFFF;
+	color:#000000;
+	cursor: pointer;
+	font-family: "Roboto",sans-serif;
+	font-size: .8em;
+	font-weight:bold;
+	height: 18px;
+	border: none;
+	margin-right: 3px;
+	width:30px;
+}
+
+* html #osk input, * html #osk button{ width: 20px; }
+html #osk input#key_backspace, html #osk button#key_backspace { width: 63px;}
+
+/*--
+MODAL
+-----------------------------------------*/
+
+body .jqmWindow.linkModal {
+	background: #fff;
+	font-size: 0.73em;
+	margin-left: -400px;
+}
+
+body #tycModal.jqmWindow.linkModal{width:760px!important;margin-left:-380px!important;margin-top:-50px;_margin-top:-70px!important;}
+
+
+
+.top {
+	background-color:#0F3193;
+}
+	.top h4 {
+		color:#FFF;
+		margin: 4px 0 0 7px;
+		float: left;
+		width: 75%;
+	}
+
+.clave {
+	background-color:#fff; /*-- HB-2922 --*/
+	padding: 10x 0;
+	text-align: center;
+	width: 100%;
+}
+	.clave a {
+		/*background: url("imagenes/datos.personales/bg.boton.guardar.gif") no-repeat scroll center top transparent !important;*/
+		color:#ffffff;
+		text-decoration:none;
+		text-align:center;
+		margin: 0 3px 0 0!important;
+		float: none!important;
+		font-size: 1em;
+		text-transform: lowercase;
+		width: 105px!important; /*Se agrando el ancho porque no entraba en IE7*/
+	}
+
+
+
+	* html .clave a { height: 30px; padding: 4px 10px!important;}
+
+	.clave a#btnAceptar {
+	    padding: 7px 18px !important;
+	    text-transform: capitalize;
+	}
+
+	.clave a#btnCancelar, .clave a#cancelartyc, .clave a#aceptartyc {
+		color: #FFF;
+		padding: 7px 16px!important;
+		width: 75px;
+		background-color: #006CB7 ;
+    	border-radius: 3px;
+    	 text-transform: capitalize;
+	}
+
+	* html .clave a#btnCancelar, * html .clave a#cancelartyc, * html .clave a#aceptartyc {
+		width: 85px;
+	}
+
+.contenidoEnlaces {
+	padding-bottom: 15px;
+}
+
+	.contenidoEnlaces h2 {
+		font-size: 14px;
+	}
+
+#tycModal .clave{*width:800px!important;}
+body .linkModal#tycModal div.middle{*width:800px!important;}
+body .linkModal#enlacesModalLogin div.middle{
+	width: auto;
+	*width:800px!important;
+}
+
+#enlacesModalLogin .top #cerrarEnlacesModalLogin {
+	background: url(cerrar.modal.png) no-repeat right center;
+	color: #FFF;
+	font-weight: bold;
+	margin-right: 10px;
+	padding-right: 18px;
+	padding-left: 0;
+	text-decoration: none;
+}
+
+body .linkModal .top {
+	padding: 6px 9px;
+	width: 96%!important;
+	*width:800px!important;
+}
+
+body .linkModal#modalOperacionSegura .top{
+	*width:100%!important;
+}
+
+body #confirmacionAliasModal div.top{
+    *width:100%!important;
+}
+
+body .linkModal div.bottom div.clave {
+	padding: 10px 0px;
+}
+
+body .linkModal div.middle {
+	/*width:96%!important;*/
+	/**width:98%!important;*/
+	max-height:250px!important;
+	*height:250px!important;
+}
+
+body .linkModal div.middle#guardarDatosModal{
+	max-height:auto!important;
+	*height:100%!important;
+}
+
+body .linkModal #divMensajeAlias.middle{
+    *height:auto!important;
+}
+
+/*ENLACES*/
+
+.contenidoEnlaces h2, .contenidoEnlaces h6 {
+	margin:15px 0px 10px;
+	font-size:14px;
+	font-weight:bold;
+	background-color:#949494;
+	color:#fff;
+	padding:5px;
+}
+
+.contenidoEnlaces span p, .contenidoEnlaces span p {
+	margin:15px 0px 10px;
+	font-size:12px;
+	font-weight:bold;
+	background:none repeat scroll 0 0;
+	background-color:#F4F4F2;
+	border:1px solid;
+	border-color:#ADADAD;
+	color:#333333;
+	padding:4px 5px;
+}
+
+.contenidoEnlaces strong {	font-weight:bold;}
+
+.contenidoEnlaces span {
+	text-align:justify;
+	font-size:12px;
+}
+
+.contenidoEnlaces ol, .contenidoEnlaces ul{
+	list-style-type:none;
+}
+
+
+.contenidoEnlaces li {
+	margin:5px 0;
+	text-align:justify;
+	font-size:12px;
+}
+
+.contenidoEnlaces img {
+	border:1px solid #000;
+	margin:10px 0;
+}
+
+.contenidoEnlaces span a {
+	color:#333;
+	padding:1px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.contenidoEnlaces span a:hover {
+	color:blue;
+}
+
+/*terminos y condiciones*/
+
+.tyc div {
+	text-align:justify;
+	font-size:11px;
+}
+.tyc div u{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.messageBox label {font-size:1em!important;}
+
+body .linkModal div.bottom {
+    background-color: #d8d8d8;
+    padding: 10px 0;
+    text-align: center;
+    }
+
+body .linkModal div.top {
+    background: none repeat scroll 0 0 #006CB7;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    width: 100% !important;
+    box-sizing: border-box;
+    min-height: 40px;
+}
+body #enlacesModalLogin .top {
+	 padding: 10px 25px;
+}
+
+body .linkModal div.bottom div.clave {
+	background: none !important;/**** HB - 2920 ****/
+}
+html body .linkModal div.bottom div.clave a {
+	/*background: url("imagenes/datos.personales/bg.boton.guardar2.gif") no-repeat scroll center top transparent !important;/**** HB - 2920 ****/
+	margin: 4px 5px 6px 0 !important;/**** HB - 2920 ****/
+    padding: 8px 35px !important;
+    background-color: #006CB7 ;
+    border-radius: 3px;
+    line-height:20px;
+    border-radius: 25px;
+}
+
+#tyc2Login {
+    margin-left: 20px !important;
+}
+
+/******** Preguntas Frecuentes *********/
+ol, ul {
+    list-style: outside none none;
+    padding: 0;
+}
+/****** Fin Preguntas Frecuentes *******/
+
+body .linkModal .enlacesBottom a#print {
+    background-color: #006CB7;
+    border-radius: 25px;
+    line-height: 20px;
+    padding: 8px 25px !important;
+    color: #fff;
+    background-image: none;
+}
+body .linkModal .enlacesBottom a#download {
+    background-color: #006CB7;
+    border-radius: 25px;
+    line-height: 20px;
+    padding: 8px 25px !important;
+    color: #fff;
+    background-image: none;
+}
+body .linkModal .enlacesBottom {
+	padding: 10px 0;
+	}
+/***HB-4905***/
+#enlacesModalLogin #textoContenidoEnlaceLogin.middle {
+    max-height: 350px !important;
+    padding: 0px 30px!important;
+}
+/***Fin HB-4905***/
+
+.clave a#btnAceptar {
+    padding: 7px 18px !important;
+    text-transform:capitalize;
+}
+
+.textoClave{
+	background: #e7e7e7 none repeat scroll 0 0!important;
+    border: 1px solid #ccc!important;
+    padding: 20px!important;
+    width: 340px!important;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    font-size: 0.7em!important;
+}
+
+/* recupero de usuario */
+
+.recuperacion_usuario {
+    bottom: 15px;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    font-size: 11px;
+}
+
+html body form#UserNameVerificationForm div#contenedor.contenedor div.login div.recuperacion_usuario a.blanqueo,
+html body form#UserNameVerificationForm div#contenedor.contenedor div.login div.recuperacion_usuario a.desbloqueo{
+	color:#006CB7 !important;
+	padding:8px;
+	text-decoration:none;
+}
+
+/* recupero de usuario */
+
+/*HB-7730*/
+.contEstado div.estado h4{
+	height:auto;
+}
+#UserNameVerificationForm #contenedor:before{
+	content: "Tu banco en Modo ON";  /*Nueva imagen background y texto principal*/
+    font-weight: NORMAL;  /*Nueva imagen background y texto principal*/
+    font-size: 42px;  /*Nueva imagen background y texto principal*/
+    top: 100px;  /*Nueva imagen background y texto principal*/
+    color:white;
+	position: relative;
+	width  : 100%;
+   	display: inline-block;
+	text-align: center;
+   }
+.login .registrarse{
+	padding-top:15px;
+}
+.login .registrarse a{
+	/*text-decoration: none;*/
+    color: #006CB7;
+    text-transform: uppercase;
+}
+
+/* Fin 99482 */
+input:focus{
+	outline:0px;
+}
+
+#UserNameVerificationForm .cuerpo::before {
+    content: "Para una correcta visualización de su Home Banking, por favor utilice alguno de los navegadores compatibles: Internet Explorer 11 o Edge, Chrome 52, Mozila Firefox 47, Safari 9.0 o versiones posteriores de los navegadores antes mencionados.";
+    border: 1px solid rgba(0,76,150,0.2);
+    padding: 10px 12px;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: rgba(0,96,150,0.1);
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    color: #006CB7;
+}
+
+#UserNameVerificationForm .cuerpo img {
+    max-height: 30px;
+    width: auto;
+}
+
+#UserNameVerificationForm div.cuerpo p {
+	display: inline-block;
+    font-size: 11px;
+    margin: 5px 0px 5px 0px;
+    max-width: 840px;
+    padding: 15px 0;
+    text-align: justify;
+    width: 100%;
+    vertical-align: top;
+}
+
+#UserNameVerificationForm div#contenedor div.cuerpo {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.7);
+    border-top: 1px solid #ffffff;
+    float: none;
+    /*max-width: 1000px;*/
+    /*bottom: 20px;*/
+    position: fixed;
+    /*left: 50%;*/
+    /*margin-left: -500px;*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius:2px;
+    box-sizing: border-box;
+}
+
+
+/* 99482 */
+
+.login .registrarse{
+	margin-top: 12px !important;
+}
+.login .registrarse a {
+    text-decoration: none;
+}
+
+@media (max-height: 600px){
+	div.login{
+    	margin: 9% auto 80px 20% !important;
+	}
+	#UserNameVerificationForm #contenedor:before{
+		content: "Tu banco en Modo ON";
+	    font-weight: NORMAL;
+	    font-size: 42px;
+	    margin-top: 12%;
+	    margin-left: 50%;
+	    position: absolute;
+	    width: auto;
+	    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+   }
+}
+
+@media (min-height:601px) and (max-height: 700px){
+div.login{
+    margin: 9% auto auto 20%;
+}
+#UserNameVerificationForm #contenedor:before{
+	content: "Tu banco en Modo ON";
+    font-weight: NORMAL;
+    font-size: 42px;
+    margin-top: 12%;
+    margin-left: 50%;
+    position: absolute;
+    width: auto;
+   }
+
+}
+
+@media (min-height: 701px) {
+	div.login{
+   		margin: 9% auto auto 20%!important;
+	}
+	#UserNameVerificationForm #contenedor:before{
+		content: "Tu banco en Modo ON";
+	    font-weight: NORMAL;
+	    font-size: 42px;
+	    margin-top: 12%;
+	    margin-left: 50%;
+	    position: absolute;
+	    width: auto;
+	    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+   }
+
+}
+@media (max-width: 1500px) {
+#UserNameVerificationForm #contenedor:before{
+	content: "Tu banco en Modo ON";
+    font-weight: NORMAL;
+    font-size: 42px;
+    margin-top: 12%;
+    margin-left: 55%;
+    position: absolute;
+    width: auto;
+   }
+}
+
+@media (max-width: 1100px) {
+	#UserNameVerificationForm div#contenedor div.cuerpo {
+	    width: 100%;
+	    bottom: 0px;
+	    left: 0;
+	    margin-left: 0px;
+	    max-width:initial;
+	}
+	#UserNameVerificationForm #contenedor:before{
+		content: "Tu banco en Modo ON";
+	    font-weight: NORMAL;
+	    font-size: 42px;
+	    margin-top: 0;
+	    margin-left: 0;
+	    position: absolute;
+	    width: 100%;
+	    display: block;
+	    margin: 0 auto;
+	    top: 70px;
+	}
+	div.login{
+	    margin: 140px auto 80px auto!important;
+	}
+}
